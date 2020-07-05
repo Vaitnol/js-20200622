@@ -28,7 +28,7 @@ function setElementSize (width, height) {
 Таким образом при вызове функции `setElementSize` без аргументов, будут возвращены значения по умолчанию:
 
 ```javascript
-setElementSize(50, 100);
+setElementSize();
 // newWidth: 50
 // newHeight: 100
 ```
