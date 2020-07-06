@@ -149,7 +149,7 @@ for (const [index, value] of ['a', 'b', 'c'].entries()) {
 * `Object.values`
 * `Object.entries` 
 
-Они возврщают массив только собственных значение объекта
+Они возврщают массив только собственных значений объекта
 
 ```javascript
 for (const [key, value] of Object.entries(obj)) { /* logic */}
