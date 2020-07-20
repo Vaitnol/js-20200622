@@ -57,8 +57,8 @@ describe('events-practice/double-slider', () => {
       min: 300,
       max: 800,
       selected: {
-        from: 200,
-        to: 400
+        from: 400,
+        to: 600
       },
       formatValue: value => '$' + value,
     });
@@ -83,8 +83,14 @@ describe('events-practice/double-slider', () => {
       bubbles: true
     });
 
+    // const up = new MouseEvent('pointerup', {
+    //   clientX: 0,
+    //   bubbles: true
+    // });
+
     leftSlider.dispatchEvent(down);
     leftSlider.dispatchEvent(move);
+    // leftSlider.dispatchEvent(up);
 
     expect(leftBoundary).toHaveTextContent(doubleSlider.min);
   });

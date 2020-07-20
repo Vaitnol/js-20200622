@@ -38,13 +38,13 @@ describe('events-practice/tooltip', () => {
   });
 
   it('should be hidden when moving out from the element with data-tooltip attribute', () => {
-    const pointermove = new MouseEvent('pointerout', {
+    const pointerout = new MouseEvent('pointerout', {
       bubbles: true
     });
 
     const container = document.getElementById('container');
 
-    container.dispatchEvent(pointermove);
+    container.dispatchEvent(pointerout);
 
     expect(tooltip.element).toBeNull();
   });
