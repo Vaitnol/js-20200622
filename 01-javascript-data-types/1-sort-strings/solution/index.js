@@ -14,8 +14,8 @@ export function sortStrings(arr, param = 'asc') {
     return makeSorting(arr, 1);
   }
 
-  function makeSorting(array, direction, options) {
+  function makeSorting(array, direction) {
     return [...array].sort((string1, string2) =>
-      direction * string1.localeCompare(string2, 'default', {caseFirst: options}));
+      direction * string1.localeCompare(string2, 'default', {caseFirst: 'upper'}));
   }
 }

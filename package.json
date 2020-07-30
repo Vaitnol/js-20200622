@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cross-env NODE_ICU_DATA=node_modules/full-icu jest",
-    "test:specific": "cross-env NODE_ICU_DATA=node_modules/full-icu jest -t 'intro/sum'"
+    "test:specific": "cross-env NODE_ICU_DATA=node_modules/full-icu jest -t 'oop-basic-intro-to-dom/column-chart'"
   },
   "repository": {
     "type": "git",
